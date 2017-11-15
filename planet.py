@@ -6,18 +6,18 @@
 import turtle
 pingmu=turtle.Screen()
 
-def stepmove():
-    mcr.forward(1)
+def stepmove(k):
+    mcr.forward(1*k)
     mcr.left(1)
-    vns.forward(2)
+    vns.forward(2*k)
     vns.left(1)
-    eth.forward(3)
+    eth.forward(3*k)
     eth.left(1)
-    mrs.forward(4)
+    mrs.forward(4*k)
     mrs.left(1)
-    jpt.forward(5)
+    jpt.forward(5*k)
     jpt.left(1)
-    stn.forward(6)
+    stn.forward(6*k)
     stn.left(1)
     
 sun=turtle.Turtle()
@@ -67,7 +67,13 @@ mrs.down()
 jpt.down()
 stn.down()
 
-for i in range(0,360,1):
-    stepmove()
+for n in range(2):
+    for i in range(0,90,1):
+        k=0.2+(i**2)*0.8/8100
+        stepmove(k)
+    for o in range(90,0,-1):
+        k=0.2+(o**2)*0.8/8100
+        stepmove(k)
+
 
 
