@@ -112,18 +112,3 @@ for n in range(2):
 
 
 
-# In[4]:
-
-import turtle
-help(turtle)
-
-
-# In[ ]:
-
-mcr.left(85)
-vns.right(73)
-eth.right(15)
-mrs.left(208)
-jpt.left(64)
-stn.right(68)
-
